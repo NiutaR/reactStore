@@ -7,8 +7,8 @@ import { getRelatedProducts } from "../../features/products/productsSlice";
 
 import { ROUTES } from "../../utils/routes";
 
-import Product from "./Product";
-import Products from "./Products";
+import Product from "../Products/Product";
+import Products from "../Products/Products";
 
 const SingleProduct = () => {
   const dispatch = useDispatch();

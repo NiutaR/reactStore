@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import styles from "../../styles/Categories.module.css";
 
 const Categories = ({ title, products = [], amount }) => {
-  const list = products.filter((_, i) => i < amount);
+  const limitedAmount = Math.min(amount, 8); // Ограничиваем значение amount до максимум 8
+  const list = products.slice(0, limitedAmount);
 
   return (
     <section className={styles.section}>
