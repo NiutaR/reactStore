@@ -1,9 +1,12 @@
 import React from "react";
+import Poster from "../Poster/Poster";
 
 
 const Home = () => {
     return (
-        <div> Home </div>
+        <div>
+            <Poster></Poster>
+        </div>
     );
 }
 
