@@ -5,11 +5,13 @@ import Footer from "./components/Footer/Footer";
 import Sidebar from "./components/Sidebar/Sidebar";
 import { useDispatch } from "react-redux";
 import { getCategories } from "./features/categories/categoriesSlice";
+import { getProducts } from "./features/products/productsSlice";
 
 const App = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getCategories());
+        dispatch(getProducts());
     }, [dispatch]);
     return (
         <div className="app">

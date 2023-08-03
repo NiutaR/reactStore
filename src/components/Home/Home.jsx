@@ -1,12 +1,16 @@
 import React from "react";
 import Poster from "../Poster/Poster";
+import { useSelector } from "react-redux";
+import Products from "../Products/Products";
 
 
 const Home = () => {
+    const { list } = useSelector(({products}) => products); 
     return (
-        <div>
+        <>
             <Poster></Poster>
-        </div>
+            <Products products={list} amount={5} title="Trending"></Products>
+        </>
     );
 }
 
