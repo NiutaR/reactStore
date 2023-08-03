@@ -13,7 +13,25 @@ const Footer = () => {
                 </Link>
             </div>
             <div className={styles.rights}>
-                Developed by Anna Romanova
+                Developed by <a href="https://niutar.github.io/CV-Anna-Romanova/" target="_blank" rel="noopener noreferrer">Anna Romanova</a>
+            </div>
+            <div className={styles.socials}>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <svg className="icon">
+                        <use xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#instagram`} />
+                    </svg>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <svg className="icon">
+                        <use xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#facebook`} />
+                    </svg>
+                </a>
+
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                    <svg className="icon">
+                        <use xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#youtube`} />
+                    </svg>
+                </a>
             </div>
         </section>
     );
